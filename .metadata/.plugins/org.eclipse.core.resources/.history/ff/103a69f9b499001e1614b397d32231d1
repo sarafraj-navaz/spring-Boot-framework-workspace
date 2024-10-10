@@ -1,0 +1,16 @@
+package com.jsp.apanahealthcheckupspringbootprojectapi.dto;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
+
+@Entity
+@Data
+public class Hospital {
+
+	@Id
+	private int hospitalId;
+	private String hospitalName;
+	private int numberOfbeds;
+	
+}

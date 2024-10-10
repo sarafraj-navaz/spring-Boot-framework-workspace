@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+        <!-- bean definitions here -->
+        
+       <!--  based on index configuration of the constructor -->
+        <bean id="constructor" class="com.jsp.spring_core_xml_project.xml.contructor.Student">
+          <constructor-arg index="0" value="123"></constructor-arg>
+          <constructor-arg index="1" value="faizan"></constructor-arg>
+          <constructor-arg index="2" value="Faizan@gmail.com"></constructor-arg>
+        </bean>
+        
+        <!-- based on data type configuration of the constructor -->
+       <bean id="constructor1" class="com.jsp.spring_core_xml_project.xml.contructor.Student">
+          <constructor-arg type="int" value="123"></constructor-arg>
+          <constructor-arg type="java.lang.String" value="faizan"></constructor-arg>
+          <constructor-arg type="java.lang.String" value="Faizan@gmail.com"></constructor-arg>
+        </bean>
+        
+        <!-- based on the variable configuration of the constructor -->
+       <bean id="constructor2" class="com.jsp.spring_core_xml_project.xml.contructor.Student">
+          <constructor-arg name="id" value="123"></constructor-arg>
+          <constructor-arg name="name" value="faizan"></constructor-arg>
+          <constructor-arg name="email" value="Faizan@gmail.com"></constructor-arg>
+        </bean>
+        
+        
+</beans>
